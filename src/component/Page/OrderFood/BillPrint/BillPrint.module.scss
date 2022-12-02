@@ -1,0 +1,105 @@
+.wrapperBillPrint {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: BillPrint ease 1s;
+}
+
+@keyframes BillPrint {
+    from {
+        transform: translateY(6000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.wrapperBillPrint__Item {
+    background-color: var(--white);
+    min-width: 600px;
+    height: 400px;
+    padding: 20px;
+    overflow: scroll;
+    z-index: 100000000000;
+
+}
+
+.wrapperBillPrint__Item__BtnPrint {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+
+    button {
+        padding: 4px;
+    }
+}
+
+.wrapperBillPrint__Item__NameRestaurant {
+    span {
+        font-size: 26px;
+        font-family: 'Satisfy', cursive;
+        font-weight: 700;
+    }
+}
+
+.wrapperBillPrint__Item__Address {
+    font-weight: 600;
+}
+
+.wrapperBillPrint__Item__PhoneNumber {
+    font-weight: 700;
+
+}
+
+.wrapperBillPrint__Item__Heading {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrapperBillPrint__Item__Table {
+    font-weight: 600;
+}
+
+.wrapperBillPrint__Item__solid {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Black);
+    margin: 10px 0;
+}
+
+.wrapperBillPrint__Item__TableListFood {
+    padding: 10px;
+
+    tr {
+        th {
+            background-color: var(--white) !important;
+            color: var(--Black);
+        }
+    }
+}
+
+.wrapperBillPrint__Item__Xmark {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    svg {
+        display: flex;
+        justify-content: flex;
+        border: 1px solid red;
+        font-size: 20px;
+        padding: 10px 14px;
+        transition: 0.2s;
+    }
+}
+
+.wrapperBillPrint__Item__Xmark svg:hover {
+    transform: rotate(90deg);
+}

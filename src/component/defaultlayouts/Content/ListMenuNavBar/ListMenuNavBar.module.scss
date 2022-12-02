@@ -1,0 +1,148 @@
+.wrapperListMenuNavBar {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    // align-items: flex-start;
+    padding-left: 20px !important;
+}
+
+.ListMenuNavBar__Item {
+    text-align: left;
+    padding: 8px 8px 14px 0px;
+    margin-top: 20px;
+
+    .ListMenuNavBar__Link {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+        user-select: none;
+
+        span {
+            color: var(--fontColor);
+            margin-left: 10px;
+        }
+
+        svg {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: rgba(108, 114, 147, 0.2);
+            padding: 8px;
+            margin-left: 4px;
+        }
+
+        i {
+            svg {
+                display: flex;
+                align-items: center;
+                background-color: initial;
+                color: var(--fontColor);
+            }
+        }
+    }
+}
+
+.ListMenuNavBar__Item__child {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    a {
+        color: var(--fontColor);
+        transition: 0.2;
+        font-size: 15px;
+    }
+
+    :hover {
+        color: var(--profile);
+        text-decoration: none;
+    }
+}
+
+.ListMenuNavBar__Link_0 svg {
+    color: var(--home);
+}
+
+.ListMenuNavBar__Link_1 svg {
+    color: var(--password);
+}
+
+.ListMenuNavBar__Link_2 svg {
+    color: var(--Logo);
+}
+
+.ListMenuNavBar__Link_3 svg {
+    color: var(--table);
+}
+
+.ListMenuNavBar__Link_4 svg {
+    color: var(--profile);
+}
+
+.ListMenuNavBar__Link_5 svg {
+    color: var(--white);
+}
+
+.ListMenuNavBar__Link_6 svg {
+    color: var(--Logo);
+}
+
+.ListMenuNavBar__Item__child {
+    animation: childList ease 0.4s;
+}
+
+@keyframes childList {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.action {
+    position: relative;
+    background-color: var(--action) !important;
+    border-top-right-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+
+    // border-left: 6px solid var(--table) !important;
+    ::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color: var(--table);
+    }
+}
+
+
+
+.actionNavBar {
+    display: none;
+    transition: all ease 0.2s;
+
+}
+
+.nameItem {}
+
+@keyframes action {
+    from {
+        transform: translatex(-200px);
+    }
+
+    to {
+        transform: translatex(0);
+
+    }
+}

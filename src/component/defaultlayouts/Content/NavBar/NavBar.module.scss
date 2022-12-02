@@ -1,0 +1,24 @@
+.wrapperNavBar {
+    width: 244px;
+    min-height: 90vh;
+    background-color: var(--primary);
+    transition: all ease 0.2s;
+}
+
+.HeadingNavBar {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+
+    span {
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+}
+
+.actionNavBar {
+    width: 100px;
+}

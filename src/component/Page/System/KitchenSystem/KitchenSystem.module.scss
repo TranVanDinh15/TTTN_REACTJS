@@ -1,0 +1,34 @@
+.wrapperTableSystem {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+.TableSystemHeading {
+    margin: 20px 0;
+
+    span {
+        margin: 20px 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: #161748;
+    }
+}
+
+.TableSystemHeading__confirm__Title {
+    float: left;
+    margin-left: 20px;
+
+    span {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.TableSytem {
+    padding: 20px;
+}
+.TableSystemHeading__inforBranch{
+    display: flex;
+    flex-direction: column;
+}

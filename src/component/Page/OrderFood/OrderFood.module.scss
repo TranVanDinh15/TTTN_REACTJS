@@ -1,0 +1,426 @@
+.wrapperOrderFood {
+    display: flex;
+    padding: 10px;
+    position: relative;
+
+    .OrderFood__Item {
+        width: 60%;
+
+        .OrderFood__Option {
+            display: flex;
+            background-color: var(--white);
+            padding: 10px;
+            border: 2px solid var(--white);
+
+            .OrderFood__Option__Item {
+                color: var(--white);
+                font-size: 14px;
+                background-color: var(--btn);
+                padding: 6px;
+                border-radius: 2px;
+                cursor: pointer;
+
+                span {
+                    margin-left: 10px;
+                }
+
+                +.OrderFood__Option__Item {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+.OrderFood__Search__Item {
+    padding: 10px 0;
+    background-color: #ccc;
+
+    input {
+        width: 400px;
+        height: 40px;
+        padding: 0 10px;
+        outline: none;
+        border: none;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+    i {
+        width: 40px;
+        padding: 10px 20px;
+        background-color: var(--btn);
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+
+        svg {
+            color: var(--white);
+        }
+    }
+}
+
+.ContainerFood {
+    width: 100%;
+    min-height: 500px;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.ContainerFood__Food {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ContainerFood__Food__Item {
+    min-width: 150px;
+    height: 110px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6px 4px;
+    border-radius: 6px;
+
+    .ContainerFood__Food__Item__Image {
+        height: 100px;
+        margin-top: 4px;
+
+        img {
+            width: 100px;
+            height: 60px;
+            object-fit: cover;
+        }
+    }
+
+
+}
+
+.ContainerFood__Food__Item__Infor {
+    display: flex;
+    flex-direction: column;
+
+    span+span {
+        color: var(--fontColor);
+    }
+}
+
+.cost {
+    text-decoration-line: line-through;
+}
+
+.price {
+    color: var(--home) !important;
+}
+
+.ContainerFood__NextPrev {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+
+    span {
+        background-color: var(--table);
+        padding: 6px;
+
+        svg {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--white);
+        }
+
+
+    }
+}
+
+.ContainerFood__NextPrev__Item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    +.ContainerFood__NextPrev__Item {
+        margin-left: 20px;
+    }
+}
+
+.OrderFood__Item {
+    background-color: var(--white);
+    width: 40%;
+
+    .OrderFood__Item__Container {
+        table {
+            width: 100%;
+            height: 360px;
+            // margin-top: 57px;
+
+            tr {
+                &:first-child {
+                    background-color: var(--btn) !important;
+                    height: 40px;
+                }
+
+                th {
+                    color: var(--white);
+                    text-align: center;
+                }
+
+                td {
+                    width: 30%;
+                    text-align: center;
+
+                    +td {
+                        font-weight: 700;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.OrderFood__Item__Total {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--table);
+    padding: 10px 0;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.OrderFood__Item__Total__TotalItem {
+    span {
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+}
+
+.OrderFood__Item__Btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: var(--white);
+
+    .OrderFood__Item__cancelBtn {
+        background-color: var(--home);
+        padding: 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.2s;
+
+        span {
+            margin-left: 4px;
+        }
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .OrderFood__Item__PayBtn {
+        background-color: var(--profile);
+        padding: 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.2s;
+
+        span {
+            margin-left: 4px;
+        }
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
+
+.OrderFood__Item__Xmark {
+    margin-left: 10px;
+    background-color: var(--home);
+    color: var(--white);
+    padding: 2px 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.actionCategory {
+    background-color: var(--table) !important;
+}
+
+.OrderFood__Item__Container__title {
+    height: 40px;
+    margin: 0;
+}
+
+.OrderFood__Item__iconAmount {
+    display: inline-block;
+    margin-left: 10px;
+
+    button {
+        background-color: orangered;
+        padding: 2px 8px;
+        border: none;
+        color: var(--white);
+        border-radius: 2px;
+
+        +button {
+            margin-left: 10px;
+        }
+    }
+}
+
+.OrderFood__Item__createTable {
+    background-color: var(--table);
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    span {
+        margin-left: 4px;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.wrapperTableHollow {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    min-width: 460px;
+    min-height: 400px;
+    background-color: #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.wrapperTableHollow__Item {
+
+
+    .wrapperTableHollow__Item__Heading {
+        span {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+.ListTable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ListTable__Item {
+    background-color: var(--profile);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+    span {
+        color: var(--white);
+    }
+
+    &:hover {
+        background-color: var(--btn);
+    }
+}
+
+.box {
+    background-color: var(--white);
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_orderTable {
+    button {
+        width: 60px;
+        height: 40px;
+
+    }
+}
+
+.wrapperTableHollow__Item__Icon {
+    float: right;
+
+    svg {
+        font-size: 20px;
+        background-color: var(--home);
+        padding: 6px 10px;
+        color: var(--white);
+        cursor: pointer;
+    }
+}
+
+.authentication {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+
+    .authentication__Item {
+        width: 400px;
+        min-height: 100px;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px;
+
+        .authentication__Item__btn {
+            display: flex;
+        }
+    }
+}
+
+.authentication__Item__Input {
+    margin: 20px 0;
+}
+
+.authentication__Item__btn__Profile {
+    padding: 4px;
+    width: 100px;
+    margin: 0 10px;
+    margin-top: 20px;
+    background-color: var(--profile);
+    color: var(--white);
+    border: none;
+    border-radius: 2px;
+}
+
+.authentication__Item__btn__home {
+    padding: 4px;
+    width: 100px;
+    margin: 0 10px;
+    margin-top: 20px;
+    background-color: var(--home);
+    color: var(--white);
+    border: none;
+    border-radius: 2px;
+
+}

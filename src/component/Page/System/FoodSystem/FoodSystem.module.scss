@@ -1,0 +1,300 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    min-height: 200px;
+}
+
+.wrapperFoodSystem {
+    background-color: var(--white);
+    min-height: 100vh;
+}
+
+td,
+th {
+    border: 1px solid #ccc !important;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+
+}
+
+td {
+    img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+}
+
+.FoodSystemHeading {
+    margin: 20px 0;
+
+    span {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+}
+
+.tableUser__Icon {
+    display: flex;
+    justify-content: space-around;
+
+    svg {
+        font-size: 16px;
+        cursor: pointer;
+        color: #009eda;
+
+        +svg {
+            margin-left: 10px;
+            color: #dc3023;
+        }
+    }
+
+}
+
+.createUser {
+    background-color: #28a745;
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    padding: 6px 4px;
+    border-radius: 2px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    span {
+        margin-left: 4px;
+    }
+}
+
+table,
+th,
+td {
+    padding: 10px;
+    border: none !important;
+    text-align: left;
+    font-weight: 500;
+
+    img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+tr {
+    th {
+        color: red;
+        font-size: 15px;
+        background-color: initial !important;
+    }
+
+    border-bottom: 1px solid rgb(204, 204, 204, 0.4) !important;
+}
+
+.systemTable {
+    padding: 20px;
+}
+
+.Containerupdate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Containerupdate__Blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.boxupdate {
+    background-color: var(--white);
+    padding: 40px;
+    margin: 20px 0;
+    width: 700px;
+    height: 500px;
+    z-index: 1;
+    border-radius: 4px;
+    animation: boxupdate ease 0.6s;
+    overflow: scroll;
+}
+
+@keyframes boxupdate {
+    from {
+        transform: translateY(-1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.boxupdate__Item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxupdate__title {
+    padding: 0 0 10px 0;
+
+    span {
+        font-size: 20px;
+        color: #365899;
+        font-weight: 600;
+    }
+}
+
+.Containerupdate__Xmark {
+    position: absolute;
+    top: 70px;
+    right: 60px;
+    padding: 6px 12px;
+    background-color: #dc3023;
+    z-index: 1;
+    color: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+
+    svg {
+        font-size: 16px;
+    }
+}
+
+.box_material {
+    position: relative;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    margin-top: 40px;
+    padding: 0 8px;
+}
+
+
+
+.box_material__Item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.box_material__CheckBox {
+    width: 280px;
+    min-height: 100px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ccc;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+.agree {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agree__Box {
+
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--table);
+    border-radius: 6px;
+    color: var(--white);
+}
+
+.agree__Box__btn {
+    margin-top: 10px;
+
+}
+
+.agree__Box__btn button {
+    padding: 4px 10px;
+    color: var(--white);
+    background-color: var(--home);
+    border: none;
+
+}
+
+.agree__Box__btn button+button {
+    padding: 4px;
+    color: var(--Black);
+    background-color: var(--white);
+    margin-left: 10px;
+}
+
+.agree {
+    animation: agree linear 0.6s;
+}
+
+@keyframes agree {
+    from {
+        transform: translateY(-1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.FoodSystemHeading {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #161748;
+}
+
+.action {
+    background-color: var(--home) !important;
+}
+
+.boxupdate__Item__Image {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #000;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.boxupdate__Item__ImageBox {
+    display: flex;
+    align-items: center;
+
+    input {
+        margin-left: 10px;
+    }
+}

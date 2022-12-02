@@ -1,0 +1,38 @@
+.mb-3 {}
+
+.mb-3 input {
+    width: 280px;
+    height: 40px;
+}
+
+.form-select {
+    width: 280px;
+    height: 40px;
+
+}
+
+.form-label {
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    color: var(--table);
+    margin-bottom: 10px;
+}
+
+.toast {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    animation: displayToast ease 0.4s;
+}
+
+@keyframes displayToast {
+    from {
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

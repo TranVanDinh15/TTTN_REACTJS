@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none !important;
+}
+
+html {
+    // user-select: none;
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--Black);
+}
+
+:root {
+    --Logo: #FEA116;
+    --Black: #000;
+    --white: #fff;
+    --primary: #191c24;
+    --btn: #FEA116;
+    --Logout: #fc424a;
+    --password: #8f5fe8;
+    --fontColor: #6c7293;
+    --profile: #00d25b;
+    --table: #0090e7;
+    --home: #fc424c;
+    --action: #0f1015;
+    --yellow: #ff8928;
+    --greyBlack: #393f4d;
+}

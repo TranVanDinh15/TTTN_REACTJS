@@ -1,0 +1,16 @@
+.action {
+    position: relative;
+    background-color: var(--action) !important;
+    border-top-right-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+}
+
+.action::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--table);
+}

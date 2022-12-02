@@ -1,0 +1,26 @@
+.AddFoodContainer {
+    height: 100vh;
+    // background: #151515 url(https://s2.best-wallpaper.net/wallpaper/2880x1800/1808/BBQ-food-meat-sauce_2880x1800.jpg) center center/cover no-repeat;
+    background-color: var(--white);
+    padding: 20px 0;
+    z-index: 10;
+
+    span {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--table);
+    }
+}
+
+.AddFoodContainer__Form {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.AddFoodHeadingContaine {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,90 @@
+.wrapperBtnLogInOut {
+    display: flex;
+
+    a {
+        +a {
+            margin-left: 10px;
+        }
+    }
+}
+
+.IsLogin {
+    cursor: pointer;
+    position: relative;
+    min-width: 100px;
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 10px 20px;
+
+    button {
+        padding: 2px 4px;
+        background-color: initial;
+        border: none;
+        font-weight: 600;
+    }
+}
+
+.IsLogin::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--profile);
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    border-radius: 50%;
+}
+
+
+.boxLogIn {
+    background-color: var(--white);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    span {
+        margin-bottom: 10px;
+
+        span {
+            color: green;
+            font-weight: 800;
+        }
+    }
+}
+
+.btnLogout {
+    display: flex;
+    align-items: center;
+
+    .btnLogout__Icon {
+        color: var(--Logout);
+        font-size: 15px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .password {
+        color: var(--password);
+    }
+
+    .profile {
+        color: var(--profile);
+    }
+}
+
+.Languages {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    .Languages__Item {
+        button {
+            width: 40px;
+        }
+    }
+}
+
+.system {
+    color: var(--table) !important
+}

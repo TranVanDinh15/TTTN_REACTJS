@@ -1,0 +1,168 @@
+.wrapperOrder {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+.listTime {
+    display: flex;
+    padding: 0 0 0 10px;
+
+    .createUser {
+        width: 100px;
+        height: 40px;
+        margin: 0 10px;
+        background-color: var(--profile);
+        color: var(--white);
+        cursor: pointer;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 14px;
+
+        svg {
+            margin: 0 4px;
+        }
+    }
+}
+
+.titleSystem {
+    padding: 20px 0 0 0;
+
+    span {
+        margin: 20px 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: #161748;
+    }
+}
+
+.TableSytem {
+    margin: 0 20px;
+}
+
+.roidId {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+    margin-left: 20px;
+
+    span {
+        color: var(--table);
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    select {
+        width: 280px;
+        border: none;
+        outline: #009eda;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: var(--btn);
+        color: var(--white);
+        font-weight: 600;
+
+        option {
+            background-color: #fff;
+            color: var(--Black);
+        }
+    }
+}
+
+.createUser {
+    background-color: #28a745;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    padding: 6px 4px;
+    border-radius: 2px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    span {
+        margin-left: 4px;
+    }
+}
+
+.date {
+    margin-top: 16px;
+    margin-left: 20px;
+
+    input {
+        padding: 8px 10px;
+    }
+}
+
+.dateContainer {
+    display: flex;
+}
+
+.boxDateTurnover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxDateTurnover__Blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.boxDateTurnover__Item {
+    min-width: 200px;
+    height: 200px;
+    background-color: var(--white);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Containerupdate__Xmark {
+    position: absolute;
+    top: 70px;
+    right: 60px;
+    padding: 6px 12px;
+    background-color: #dc3023;
+    z-index: 1;
+    color: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+
+    svg {
+        font-size: 16px;
+    }
+}
+
+.createUser__Item {
+    // width: 280px;
+    padding: 0 4px;
+    height: 39px;
+    border: none;
+    outline: #009eda;
+    border-radius: 4px;
+    background-color: var(--btn);
+    color: var(--white);
+    font-weight: 600;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}

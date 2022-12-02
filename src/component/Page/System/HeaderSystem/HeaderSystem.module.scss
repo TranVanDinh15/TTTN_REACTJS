@@ -1,0 +1,50 @@
+.wrapperHeaderSystem {}
+
+.HeaderSystem {
+    background-color: var(--greyBlack);
+    padding: 0 26px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    .HeaderSystem__Item {
+        color: var(--white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        span {
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        svg {
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 200px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: left;
+
+    span {
+        color: var(--primary);
+        padding: 4px;
+        user-select: none;
+
+        &:hover {
+            color: var(--white);
+            background-color: var(--btn);
+        }
+    }
+}

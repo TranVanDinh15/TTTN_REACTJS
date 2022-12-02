@@ -1,0 +1,110 @@
+.wrapperDetailTable {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes detailTable {
+    from {
+        transform: translateX(20000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.wrapperDetailTable__Container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 500px;
+    height: 100vh;
+    background-color: var(--white);
+    z-index: 100000;
+    overflow: scroll;
+}
+
+.wrapperDetailTable__Item {
+    padding: 10px;
+}
+
+.wrapperDetailTable__Item__Total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.wrapperDetailTable__xmark {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+
+
+    svg {
+        font-size: 30px;
+        font-size: 700;
+        cursor: pointer;
+        border: 2px solid var(--home);
+        padding: 2px 8px;
+        transition: 0.6s;
+    }
+}
+
+.wrapperDetailTable__xmark:hover svg {
+    transform: rotate(90deg);
+}
+
+.wrapperDetailTable__Heading {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bottom__btn__Item {
+    button {
+        width: 100px;
+        padding: 10px 4px;
+        border-radius: 4px;
+        background-color: var(--btn);
+        font-size: 18px;
+        color: var(--white);
+        font-weight: 600;
+        border: none;
+
+        &:hover {
+            background-color: var(--primary);
+        }
+    }
+
+    +.bottom__btn__Item {
+        button {
+
+            background-color: var(--profile);
+            font-size: 18px;
+            color: var(--white);
+            font-weight: 600;
+
+            &:hover {
+                background-color: var(--primary);
+            }
+        }
+    }
+}
+
+.wrapperDetailTable__Item__NameClient {
+    margin-top: 18px;
+    span {
+        font-size: 16px;
+    }
+}
+.action {
+    background-color: var(--home) !important;
+}

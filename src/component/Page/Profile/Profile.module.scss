@@ -1,0 +1,145 @@
+.wrapperProfile__Item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+    .wrapperProfile__Item__Avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .wrapperProfile__Item__title {
+        margin-top: 20px;
+
+        span {
+            font-size: 20px;
+            color: var(--white);
+        }
+    }
+}
+
+.wrapperProfile__Item2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    .wrapperProfile__Item__child {
+        margin-right: 60px;
+    }
+}
+
+.wrapperProfile__Item__child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapperProfile__Item__child__Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 80px;
+}
+
+
+
+.wrapperProfile__Item__child__Item__Image {
+    padding: 10px;
+    background-color: var(--table);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        font-size: 26px;
+        color: var(--white);
+    }
+}
+
+.Infor__Name {
+    margin: 20px 0;
+    display: flex;
+
+    span {
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.Infor__NameUser {
+    span {
+        color: var(--btn);
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.wrapperProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.wrapperProfile__NoLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    span {
+        color: var(--white);
+        font-size: 16px;
+    }
+}
+
+.ContainerInfor__Title {
+    padding: 20px 0;
+
+    span {
+        font-size: 26px;
+        color: var(--white);
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.ContainerInfor__detail {
+    padding: 0 40px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--white);
+
+    span {
+        color: var(--profile);
+        font-size: 15px;
+
+        +span {
+            color: var(--white);
+
+        }
+    }
+}
+
+.ContainerInfor__detail__Item {
+    margin-top: 10px;
+}

@@ -1,0 +1,151 @@
+.wrapperWaveHouseSystem {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+.createUser {
+    background-color: #28a745;
+    display: flex;
+    float: left;
+    margin-left: 20px;
+    padding: 6px 4px;
+    border-radius: 2px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+
+    span {
+        margin-left: 4px;
+    }
+}
+
+.WaveHouseSystemHeading {
+    padding: 20px 0;
+
+    span {
+        margin: 20px 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: #161748;
+    }
+}
+
+.TableSytem {
+    padding: 0 20px;
+}
+
+.roidId {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+
+    span {
+        color: var(--table);
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    select {
+        width: 280px;
+        border: 1px solid #ccc;
+        outline: #009eda;
+        padding: 8px;
+        border-radius: 4px;
+    }
+}
+
+.optionContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Containerupdate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Containerupdate__Blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.boxupdate {
+    background-color: var(--white);
+    padding: 40px;
+    margin: 20px 0;
+    width: 700px;
+    height: 500px;
+    z-index: 1;
+    border-radius: 4px;
+    animation: boxupdate ease 0.6s;
+    overflow: scroll;
+}
+
+@keyframes boxupdate {
+    from {
+        transform: translateY(-1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.boxupdate__Item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxupdate__title {
+    padding: 0 0 10px 0;
+
+    span {
+        font-size: 20px;
+        color: #365899;
+        font-weight: 600;
+    }
+}
+
+.Containerupdate__Xmark {
+    position: absolute;
+    top: 70px;
+    right: 60px;
+    padding: 6px 12px;
+    background-color: #dc3023;
+    z-index: 1;
+    color: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+
+    svg {
+        font-size: 16px;
+    }
+}
+
+.materialOption {
+    margin-top: 40px;
+
+    select {
+        padding: 10px 66px;
+        border: 1px solid #ccc;
+        outline: none;
+    }
+}

@@ -1,0 +1,37 @@
+.wrapperLogo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+        font-size: 28px;
+        font-weight: 800;
+        color: var(--Logo);
+
+        +span {
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.imageLogo {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@keyframes routeLogo {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,238 @@
+.wrapperUserManage {
+    background-color: #fff;
+    min-height: 150vh;
+}
+
+.systemBox {
+    width: 200px;
+    height: auto;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 4px;
+
+    .systemBox__Item {
+        width: 100%;
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 2px;
+        background-color: rgba(204, 204, 204, 0.4);
+
+        +.systemBox__Item {
+
+            margin-top: 20px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+.titleSystem {
+    margin-top: 20px;
+
+    span {
+        margin: 20px 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: #161748;
+    }
+}
+
+.createUser {
+    background-color: #28a745;
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    padding: 6px 4px;
+    border-radius: 2px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    span {
+        margin-left: 4px;
+    }
+}
+
+.HeaderSystem__Item {
+    display: flex;
+    align-items: center;
+
+    .HeaderSystem__ItemChild {
+
+
+        +.HeaderSystem__ItemChild {
+            margin-left: 20px;
+        }
+    }
+}
+
+.tableUser {
+    padding: 20px;
+
+    table,
+    th,
+    td {
+        padding: 10px;
+        border: none !important;
+        text-align: left;
+        font-weight: 500;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    tr {
+        th {
+            color: red;
+            font-size: 15px;
+        }
+
+
+        border-bottom: 1px solid rgb(204, 204, 204, 0.4) !important;
+    }
+
+}
+
+tr:nth-child(even) {
+    background-color: #fff !important;
+}
+
+.tableUser__Icon {
+    display: flex;
+    justify-content: space-around;
+
+    svg {
+        font-size: 16px;
+        cursor: pointer;
+        color: #009eda;
+
+        +svg {
+            margin-left: 10px;
+            color: #dc3023;
+        }
+    }
+
+}
+
+.tableUser__Email {
+    color: var(--table);
+}
+
+.Containerupdate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Containerupdate__Blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.boxupdate {
+    background-color: var(--white);
+    padding: 40px;
+    margin: 20px 0;
+    width: 700px;
+    height: 500px;
+    z-index: 1;
+    border-radius: 4px;
+    animation: boxupdate ease 0.6s;
+    overflow: scroll;
+}
+
+@keyframes boxupdate {
+    from {
+        transform: translateY(-1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.boxupdate__Item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxupdate__title {
+    padding: 0 0 10px 0;
+
+    span {
+        font-size: 20px;
+        color: #365899;
+        font-weight: 600;
+    }
+}
+
+.Containerupdate__Xmark {
+    position: absolute;
+    top: 70px;
+    right: 60px;
+    padding: 6px 12px;
+    background-color: #dc3023;
+    z-index: 1;
+    color: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+
+    svg {
+        font-size: 16px;
+    }
+}
+
+.roidId {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    span {
+        color: var(--table);
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    select {
+        width: 280px;
+        border: 1px solid #ccc;
+        outline: #009eda;
+        padding: 10px;
+        border-radius: 4px;
+    }
+}
+
+.agree__Box__Add {
+    cursor: pointer;
+    background-color: #28a745;
+    padding: 10px 6px;
+    color: var(--white);
+}
+
+// .titleSystem {
+//     margin: 20px 0;
+//     font-size: 24px;
+//     font-weight: 500;
+//     color: #161748;
+// }

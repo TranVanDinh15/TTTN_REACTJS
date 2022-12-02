@@ -1,0 +1,106 @@
+.wrapperHome {
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.Heading {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+
+    span {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.Container {
+    padding: 10px;
+    // border: 1px solid var(--white);
+    width: 100%;
+    margin-top: 10px;
+
+    .Container__Day {
+        background-color: var(--primary);
+        padding: 14px 0;
+        border-radius: 4px;
+
+        span {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--profile);
+        }
+    }
+}
+
+.turnoverOrder__Item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    user-select: none;
+
+    .turnoverOrder__Item__child {
+        width: 50%;
+        height: auto;
+        padding: 10px;
+        background-color: var(--primary);
+        border-radius: 4px;
+
+        +.turnoverOrder__Item__child {
+
+            margin-left: 20px;
+        }
+
+        .turnoverOrder__title {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+
+            span {
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--table);
+
+                i {
+                    margin-right: 6px;
+                }
+            }
+        }
+
+        .turnoverOrder__Infor {
+            padding: 10px;
+
+            .turnoverOrder__Infor__Item {
+                display: flex;
+                justify-content: space-between;
+
+                +.turnoverOrder__Infor__Item {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.turnoverOrder__Item__col {
+    display: flex;
+    flex-direction: column;
+
+    .turnoverOrder__Item__child {
+        margin-left: 20px;
+
+        +.turnoverOrder__Item__child {
+
+            margin-top: 20px;
+        }
+    }
+}
+
+.turnoverOrder__Toast {
+    position: fixed;
+    top: 20px;
+    right: 4px;
+    z-index: 10;
+}
